@@ -1,0 +1,13 @@
+.users {
+  text-align: left;
+  width: 200px;
+}
+
+.user-container {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.user-container:hover {
+    background: lightskyblue;
+}

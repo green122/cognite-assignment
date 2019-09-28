@@ -27,3 +27,20 @@
   0% { transform: rotateY(0deg); }
   100%  { transform: rotateY(360deg); }
 }
+
+.switch-button {
+  background: lightskyblue;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.user-selection {
+  margin: 20px auto;
+  background: white;
+  width: 400px;
+  padding: 40px;
+}

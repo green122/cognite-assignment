@@ -1,0 +1,39 @@
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+
+  height: calc(100vh - 450px);
+  margin: auto;
+  overflow: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 5px 10px darkgrey;
+}
+
+.sender {
+  text-align: left;
+  align-self: flex-start;
+  background-color: palevioletred;
+}
+
+.author {
+  text-align: right;
+  align-self: flex-end;
+  background-color: lightyellow;
+}
+
+.chat-container {
+  width: 400px;
+  margin-left: 10px;
+}
+
+.chat-user {
+  margin-bottom: 15px;
+}
+
+.messenger {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+}
