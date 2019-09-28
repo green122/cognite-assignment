@@ -9,7 +9,7 @@ import {
   GET_MESSAGES,
   SELECT_CHAT_USER,
   SEND_MESSAGE,
-  StateContext,  
+  StateContext,
   getUserById
 } from "../../App";
 
@@ -48,15 +48,16 @@ export default function Messager() {
       <UsersList actionType={SELECT_CHAT_USER} userList={userList} />
       {chatUser ? (
         <section className="chat-container">
-            <div className="chat-user">
-                Conversation with {getUserById(userList, chatUser).name}
-            </div>
+          <div className="chat-user">
+            Conversation with {getUserById(userList, chatUser).name}
+          </div>
           <div className="messages">
             {messages
               .slice()
               .reverse()
               .map(message => (
                 <ChatMessage
+                  key={message.timestamp}
                   message={message.content}
                   className={message.from === loggedUser ? "author" : "sender"}
                 />

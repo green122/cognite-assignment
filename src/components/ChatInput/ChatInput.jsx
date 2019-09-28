@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import "./ChatInput.css";
 
 export default function ChatInput({ onEnter }) {

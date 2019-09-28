@@ -17,14 +17,14 @@ const usersOnline = [
   { name: "Jackie Chan", picture: "", id: "dfg034" }
 ];
 
-const initialState = {
+export const initialState = {
   loggedUser: "",
   chatUser: "",
   userList: usersOnline,
   messages: []
 };
 
-const reducer = (state, action) => {
+export const reducer = (state, action) => {
   const { payload } = action;
   switch (action.type) {
     case SELECT_LOGGED_USER:

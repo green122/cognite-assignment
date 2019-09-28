@@ -12,6 +12,7 @@ export default function UserList({ actionType, userList }) {
       {userList.map(user => (
         <div
           className="user-container"
+          key={user.id}
           onClick={() => dispatch({ type: actionType, payload: user.id })}
         >
           {user.name}
